@@ -36,71 +36,72 @@
     .email{display: none;}
 
     /* POP MENUS ----------------------------------------------------------------------------------------------*/
-        .popMenus {
-            display: inline-block;
-            position: fixed;
+    .popMenus {
+        display: inline-block;
+        position: fixed;
+        z-index: 3;
+        bottom: 4.5vw;
+
+        width: 100%;
+    }
+        .projectsButton, .infoButton{
             z-index: 3;
-            bottom: 4.5vw;
 
-            width: 100%;
+            width: 44%;
+            padding: 17px;
+
+            background-image: linear-gradient(to bottom right, blue, mediumblue);
+            border: 1.7vw solid lightgray;
+            border-style: ridge;
+            border-radius: 2vw;
+            box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.1);
+            color: white;
+            font-family: "Krungthep", Georgia, 'Times New Roman', Times, serif;
+            font-size: calc(12px + 1.5vw);
+            text-shadow: 0 2px 3px navy;
         }
-            .projectsButton, .infoButton{
-                z-index: 3;
+        .projectsButton {margin-left: 4%;}
 
-                width: 44%;
-                padding: 17px;
+        .infoButton {
+            float: right;
 
-                background-image: linear-gradient(to bottom right, blue, darkblue);
-                border: 1.7vw solid lightgray;
-                border-style: ridge;
-                border-radius: 2vw;
+            margin-right: 4%;
+        }
+
+        .projectsContent, .infoContent{
+            display: none;
+            position: absolute;
+            z-index: 4;
+            bottom: 0;
+
+            width: 92%;
+            padding: 3% 0 6% 3%;
+            margin: 0 4%;
+
+            background-image: linear-gradient(to bottom right, darkblue, blue);
+            box-sizing: border-box;
+            border: 1.7vw solid lightgray;
+            border-style: ridge;
+            border-radius: 2vw;
+            box-shadow: 0px 0px 16px 0 rgba(0,0,0,0.2);
+        }
+            .projectsContent a, .infoContent a{
+                display: block;
+
+                padding: 20px;
+
                 color: white;
-                font-family: "Krungthep", Georgia, 'Times New Roman', Times, serif;
+                font-family: Georgia, 'Times New Roman', Times, serif;
                 font-size: calc(12px + 1.5vw);
+                text-decoration: none;
                 text-shadow: 0 2px 3px navy;
             }
-            .projectsButton {margin-left: 4%;}
-
-            .infoButton {
-                float: right;
-
-                margin-right: 4%;
+            #selected {
+                color: rgb(255, 255, 255, 0.5);
+                text-decoration: none;
+                text-shadow: none;
             }
-
-            .projectsContent, .infoContent{
-                display: none;
-                position: absolute;
-                z-index: 4;
-                bottom: 0;
-
-                width: 92%;
-                padding: 3% 0 6% 3%;
-                margin: 0 4%;
-
-                background-image: linear-gradient(to bottom right, blue, darkblue);
-                box-sizing: border-box;
-                border: 1.7vw solid lightgray;
-                border-style: ridge;
-                border-radius: 2vw;
-                box-shadow: 0px 0px 16px 0 rgba(0,0,0,0.2);
-            }
-                .projectsContent a, .infoContent a{
-                    display: block;
-
-                    padding: 20px;
-
-                    color: white;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                    font-size: calc(12px + 1.5vw);
-                    text-decoration: none;
-                    text-shadow: 0 2px 3px navy;
-                }
-                #selected {
-                    color: cornflowerblue;
-                    text-decoration: none;
-                    text-shadow: none;
-                }
-
+            
         .show {display:block}
     /* --------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------*/
