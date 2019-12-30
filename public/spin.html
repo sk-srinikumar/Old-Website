@@ -1,0 +1,250 @@
+<!-- Table of Contents -----------------------------------------------------------------------------------------
+----1.Head
+----2.Body
+--------1.Navigation
+------------1.Pop Menus
+------------2.Static Menus
+------------3.Email
+--------2.Grid
+------------1.Logo
+------------2.Content
+--------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Srini Kumar - Spin Coater Design</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/spin.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- FIREBASE SDK & INITIALIZATION -------------------------------------------------------------------->
+            <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+            <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+            <script src="/__/firebase/init.js"></script>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- NAVIGATION --------------------------------------------------------------------------------------->
+            <div class="popMenus">
+                <button onclick="showProjectsMenu()" class="projectsButton">Projects</button>
+                <div id="projectsPopMenu" class="projectsContent">
+                    <a id="selected">Spin Coater Design</a>
+                    <a href="laser.html">Laser Software</a>
+                    <a href="microfluidic.html">Microfluidic Chips</a>
+                    <a href="messenger.html">Messenger UI</a>
+                    <a href="painchek.html">PainChek Logo</a> 
+                </div>
+
+                <button onclick="showInfoMenu()" class="infoButton">Info &#38; Links</button>
+                <div id="infoPopMenu" class="infoContent">
+                    <a href="index.html">About Me</a>
+                    <a href="mailto:hello@s-kumar.com" target="_blank">Email me: hello@s-kumar.com</a>  
+                    <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">Open My Github</a>
+                    <a href="https://dribbble.com/srinik" target="_blank">Open My Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">Open My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="projectsStaticMenu">
+                <h1 class="headings">Projects</h1>
+                
+                <!-- SELECTION INDICATION ARROW -------------------------------------------------------------->
+                    <!-- This odd format must be used or else the arrow doesn't work properly. -->
+                    <a id="selected">Spin Coater Design &nbsp;&nbsp;&nbsp;&nbsp;<em><strong>&#x25C0;</strong>&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</em></a>
+                <!--------------------------------------------------------------------------------------------->
+                <a href="laser.html">Laser Software</a>
+                <a href="microfluidic.html">Microfluidic Chips</a>
+                <a href="messenger.html">Messenger UI</a>
+                <a href="painchek.html">PainChek Logo</a> 
+            </div>
+
+            <div class="infoStaticMenu">
+                <h1 class="headings">Info &#38; Links</h1>
+
+                <a href="index.html">About Me</a>
+                <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">View My Github</a>
+                <a href="https://dribbble.com/srinik" target="_blank">View My Dribbble</a>
+                <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">View My LinkedIn</a>
+            </div>
+
+            <div class="email">
+                <object type="image/svg+xml" data="images/email.svg" ></object>
+                <a href="mailto:hello@s-kumar.com" target="_blank">hello@s-kumar.com</a>   
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- GRID --------------------------------------------------------------------------------------------->
+            <div class="gridBox">
+                <div class="logoBox">
+                    <object class="logo" type="image/svg+xml" data="images/Logo.svg" ></object>
+                </div>
+
+                <!-- CONTENT ---------------------------------------------------------------------------------->
+                <div class="contentBox">
+                    <div class="column"><img class="image" src="images/spin/top.png" alt="Top View"></div>
+
+                    <div class="column">
+                        <h2>Background</h2>
+
+                        <p>
+                            A spin coater is a machine that spins thick fluids so fast that they flatten to a 
+                            height of only dozens of microns high! I designed a spin coater for flattening SU-8 
+                            25 epoxy through numerous stages of spinning.
+                        </p>
+    
+                        <p>
+                            Decent spin coater machines can cost a few grand. Because of budget cuts stemming 
+                            from the executive branch of the U.S. government, funds became tight. This allowed 
+                            me to design and build a spin coater for less than 100 bucks. So I got to designing 
+                            a spin coater that&#8217;s not only cheap but also built for my research purposes. 
+                            The wood-shop professor on campus agreed to build me the chassis for free. The doctor 
+                            I work under already had soldering equipment. It wasn&#8217;t difficult at all to keep 
+                            the costs low.
+                        </p>
+    
+                        <p>
+                            Once I designed the machine, I ordered $50 worth of parts including a DC motor, a 
+                            power ]supply, and an H-Bridge. I planned to get all the core parts hooked up and 
+                            running. Then I could order a custom PCB based on my amateur circuitry job. Finally, 
+                            I&#8217;d put together the electronics, chassis and finishing touches. Well... that 
+                            &#8217;t happen.
+                        </p>
+    
+                        <p>
+                            Right after the parts arrived, my supervisor ended up buying a expensive spin 
+                            coater for my research. My enthusiasm for my research, the faculty&#8217;s increasing 
+                            interest in my project and the value of time convinced my supervisor that it was worth 
+                            the money to purchase a spin coater. Anyways, hit me up if you wanna buy some cheap 
+                            parts.
+                        </p>
+                    </div>
+
+                    <div class="column"><img class="image" src="images/spin/front.png" alt="Front View"></div>
+
+                    <div class="column">
+                        <h2>Design</h2>
+
+                        <p>
+                            Spin coaters on the market all have two things in common: those awful buttons and displays. 
+                            Who wants to be pressing gummy buttons all day? It may look clean but it limits functionality. 
+                            Various processes end being programmed through a limited window of buttons. Adding to the 
+                            headache are cheap displays that never show the whole picture.
+                        </p>
+
+                        <p>
+                            I prefer separate dials for each adjustable setting. It&#8217;s a lot of dials but dials are dirt 
+                            cheap. I would love to have a separate display for each setting too, but displays are not dirt 
+                            cheap. Since each adjustable setting has such a huge range of options, I thought it would make more 
+                            sense to not add number labels around the dials. They&#8217;re cramped, imprecise and difficult 
+                            for me to add. Instead, one display at the top of the machine would show every change for every 
+                            setting.
+                        </p>
+
+                        <p>
+                            You may think that&#8217;s a bad idea. How would someone know what they set each dial to if 
+                            there&#8217;s only one display? Isn&#8217;t that inconvenient? Not in this case. My research 
+                            includes analyzing spin processes. Meaning I&#8217;ll have every single setting recorded and updated 
+                            on paper in front of me at all times. If somebody moves a dial by accident and nobody was aware, 
+                            it may end up being extra work for me.
+                        </p>
+
+                        <p>
+                            I restricted all interactive items to the sloped area. Sloped areas are ideal because the angle lets 
+                            you see all the labels.
+                        </p>
+
+                        <p>
+                            In the sea of dials, there is a lone button on the bottom right. I thought it was pointless to give 
+                            it a label. If a user is looking for the machine&#8217;s start button, they&#8217;ll know which one 
+                            it is. Cause it&#8217;s the only button there.
+                        </p>
+
+                        <p>
+                            I never figured out where to put the power button. I thought it was something I could figure out later. 
+                            At first, I wanted it in the sloped area because it&#8217;s an interactive object. 
+                            But the power button is also an indicator like the display.
+                        </p>
+
+                        <p>
+                            The dials are <q>chronologically</q> ordered from left to right. Each column of dials falls 
+                            under the proper label for specific phases. I won&#8217;t benefit from this ordering. 
+                            But if someone were to continue my research or produce microfluidic chips using my process, 
+                            the organizing of the dials would help the user understand the process much faster. Also, 
+                            it just feels right.
+                        </p>
+                    </div>
+
+                    <div class="column"><img class="image" src="images/spin/colored.png" alt="Colored View"></div>
+
+                    <div class="column">
+                        <p>
+                            Painting each column would emphasize the order. If I made the chassis of aluminum and 
+                            glass, different intensities of frosting on glass instead of paint would mark the 
+                            columns. Maybe it would be different intensities of metal brushing. If I had money, 
+                            this machine would end up in a museum of Braun products.
+                        </p>
+
+                        <p>
+                            I initially planned on painting the entire chassis, but I realized it would be better 
+                            to leave most of the wood unpainted. In a lab with many chemicals, you need to know 
+                            what everything is made of so accidents can be dealt with properly.
+                        </p>
+
+                        <p>
+                            Some issues are unpreventable. Some epoxy splashes everywhere when you spin at 3000 RPM; 
+                            there&#8217;s no avoiding it! The spinning area incorporates a CD cake box lid for 
+                            covering. A CD cake box lid is secured into the 3 curved rectangular mechanisms in 
+                            the spinning area. Once epoxy build-up cakes the lid, we can throw the lid away and 
+                            replace it with another dirt cheap CD cake box lid. It&#8217;s much cheaper to buy a 
+                            new lid instead of cleaning the epoxy off the old one.
+                        </p>
+
+                        <p>
+                            The part of chassis containing the spinning area is circular. Why is it circular 
+                            and not square like the other side? Because... this is the spinning area!
+                        </p>
+
+                        <p>
+                            The circular part of the chassis does not slope while the area next to it does. 
+                            This will lead weird hand formations when adjusting the dial at the top-right corner. 
+                            It&#8217;s fine because that specific setting hooked up to the dial rarely needs any change.
+                        </p>
+
+                        <p>
+                            I originally wanted to place the spinning area to the north of the display, but that led to 
+                            an undesirable shape and weight distribution. This final long rectangular design is easier 
+                            to store and use in the lab I work in.
+                        </p>
+
+                        <p>
+                            There are 3 LED lights sunk into the sides of the spinning area. These will light up while spinning 
+                            is in progress. 3000 RPM is really fast. It&#8217;s fast enough to shoot thin glass through your 
+                            eyeball and into your brain. The epoxy is spun and flattened on a glass plate which is secured to 
+                            the spinning metal disc only by double-sided scotch tape. The cakebox will usually stop any flying 
+                            glass, but you should still be aware of the potential.
+                        </p>
+
+                        <p>
+                            It&#8217;s important to keep the spinning stable to produce the desired product and to reduce 
+                            accidents. The legs at the bottom of the machine aren&#8217;t just legs. They&#8217;re rubber 
+                            stabilizers that handle vibrations.
+                        </p>
+
+                        <p>
+                            Overall, I&#8217;m proud of this design. The height comes out to about 3 inches; the length 
+                            comes out to about 15 inches and the width comes out to about 6 inches. The dials, button, 
+                            display, etc. are all scaled after parts I planned on purchasing. Let me know if you use this 
+                            design to build your spin coater!
+                        </p>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+    </body>
+</html>

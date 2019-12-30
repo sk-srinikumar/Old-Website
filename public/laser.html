@@ -1,0 +1,201 @@
+<!-- Table of Contents -----------------------------------------------------------------------------------------
+----1.Head
+----2.Body
+--------1.Navigation
+------------1.Pop Menus
+------------2.Static Menus
+------------3.Email
+--------2.Grid
+------------1.Logo
+------------2.Content
+--------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Srini Kumar - Laser Software</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/laser.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- FIREBASE SDK & INITIALIZATION -------------------------------------------------------------------->
+            <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+            <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+            <script src="/__/firebase/init.js"></script>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- NAVIGATION --------------------------------------------------------------------------------------->
+            <div class="popMenus">
+                <button onclick="showProjectsMenu()" class="projectsButton">Projects</button>
+                <div id="projectsPopMenu" class="projectsContent">
+                    <a href="spin.html">Spin Coater Design</a>
+                    <a id="selected">Laser Software</a>
+                    <a href="microfluidic.html">Microfluidic Chips</a>
+                    <a href="messenger.html">Messenger UI</a>
+                    <a href="painchek.html">PainChek Logo</a> 
+                </div>
+
+                <button onclick="showInfoMenu()" class="infoButton">Info &#38; Links</button>
+                <div id="infoPopMenu" class="infoContent">
+                    <a href="index.html">About Me</a>
+                    <a href="mailto:hello@s-kumar.com" target="_blank">Email me: hello@s-kumar.com</a>  
+                    <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">Open My Github</a>
+                    <a href="https://dribbble.com/srinik" target="_blank">Open My Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">Open My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="projectsStaticMenu">
+                <h1 class="headings">Projects</h1>
+
+                <a href="spin.html">Spin Coater Design</a>
+                <!-- SELECTION INDICATION ARROW -------------------------------------------------------------->
+                    <!-- This odd format must be used or else the arrow doesn't work properly. -->
+                    <a id="selected">Laser Software &nbsp;&nbsp;&nbsp;&nbsp;<em><strong>&#x25C0;</strong>&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</em></a>
+                <!--------------------------------------------------------------------------------------------->
+                <a href="microfluidic.html">Microfluidic Chips</a>
+                <a href="messenger.html">Messenger UI</a>
+                <a href="painchek.html">PainChek Logo</a> 
+            </div>
+
+            <div class="infoStaticMenu">
+                <h1 class="headings">Info &#38; Links</h1>
+                
+                <a href="index.html">About Me</a>
+                <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">View My Github</a>
+                <a href="https://dribbble.com/srinik" target="_blank">View My Dribbble</a>
+                <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">View My LinkedIn</a>
+            </div>
+
+            <div class="email">
+                <object type="image/svg+xml" data="images/email.svg" ></object>
+                <a href="mailto:hello@s-kumar.com" target="_blank">hello@s-kumar.com</a>   
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- GRID --------------------------------------------------------------------------------------------->
+            <div class="gridBox">
+                <div class="logoBox">
+                    <object class="logo" type="image/svg+xml" data="images/Logo.svg" ></object>
+                </div>
+
+                <!-- CONTENT ---------------------------------------------------------------------------------->
+                <div class="contentBox">
+                    <div class="columnB">
+                        <h2>Background</h2>
+
+                        <p>
+                            The lab I work in analyzes new species of extremophile bacteria. To extract one 
+                            microorganism from a sample of an unimaginable amount, we utilize lasers. If the 
+                            physics are right, a laser beam can freeze tiny objects in space without killing them. 
+                            This is appropriately called optical tweezing or optical trapping.
+                        </p>
+
+                        <p>
+                            This is an extremely slow process. It takes about 10 hours to capture one microorganism 
+                            and move it away from an entire crowd. The laser is turned on and off multiple times 
+                            throughout the process. But not really. You see, turning a laser on and off damages the 
+                            laser. So you don&#8217;t mess with the power. Instead, you just use a heavy shutter 
+                            to block the laser beam when you don&#8217;t have any use for it.
+                        </p>
+
+                        <p>
+                            The optical tweezing process keeps your hands full the entire time, so being able to 
+                            control the laser shutter by pressing a pedal with your foot is nice. That&#8217;s 
+                            why I designed and developed the Kinesis S software.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="imageA" src="images/laser/kinesis.png" alt="Kinesis S"></div>
+
+                    <div class="columnB"><img class="imageB" src="images/laser/kcube.png" alt="K Cube"></div>
+
+                    <div class="columnB">
+                        <h2>Development</h2>
+
+                        <p>
+                            This device controls the shutter. It&#8217;s called the K-Cube. You can toggle the 
+                            shutter by directly interacting with the K-Cube. But you need to be using your 
+                            fingers to do that. So we thought we could hook up the K-Cube to a computer and use 
+                            the manufacturer&#8217;s software to toggle the shutter using an USB pedal. The 
+                            manufacturer&#8217;s software doesn&#8217;t allow using pedals with only one button. 
+                            The software requires that any controller hardware has two buttons: one for opening the 
+                            shutter and one for closing the shutter. We could have just bought a cheap pedal with 
+                            two buttons to replace the one-buttoned pedal we already bought. But I hadn&#8217;t 
+                            started my research project yet, so I had time to kill.
+                        </p>
+
+                        <p>
+                            The biggest obstacle I faced in this project is the poor K-Cube API. The 
+                            documentation was almost non existent. I used Visual Studio to analyze the API myself. 
+                            The manufacturer did not code many of the declared functions. And many of the functions 
+                            that were coded were not sufficient. For example, the device&#8217;s given polling 
+                            function would use 99% of the CPU&#8217;s power even when the device was idle. There 
+                            was no way to access attributes directly, so I had to wrap the polling function in code 
+                            to add a safe delay. I spent most of my developing workarounds and wrappings.
+                        </p>
+
+                        <p>
+                            The Kinesis S has to display a UI, give live status updates of the shutter and keep polling. 
+                            To execute all these functions flawlessly at the same time, I learned asynchronous 
+                            programming. You can view my clean code-job on my Github.
+                        </p>
+                    </div>
+
+                    <div class="columnA">
+                        <h2>Design</h2>
+
+                        <p>
+                            Aiming for that sleek german Apple-esque aesthetic for all technological designs is pretty lame. 
+                            Aesthetics should reflect the function of a product. We&#8217;re putting newly discovered 
+                            species of extremophiles into microfluidic chips and then freezing them in 3D space with 
+                            photons from a laser. That&#8217;s peak biological sci-fi baby! At the time of 
+                            designing this program, I was watching a bio-sci-fi anime called Neon Genesis 
+                            Evangelion. The UI of the tech in the show had a harsh 90&#8217;s aesthetic. 
+                            I wanted to replicate that for my software.
+                        </p>
+                    </div>
+
+                    <div class="columnA"><img class="imageC" src="images/laser/schema.png" alt="Schema"></div>
+
+                    <div class="columnA">
+                        <p>
+                            The most obvious part of the UI is the schema of the devices and links utilized. 
+                            They&#8217;re properly labeled and they transform to reflect the status of the devices and links. 
+                            It speaks for itself. The links break and connect appropriately. The triangle 
+                            indicator flashes when an input is received. I&#8217;m pretty proud of this!
+                        </p>
+
+                        <p>
+                            Buttons are unobtrusive because they&#8217;re rarely used. Instead of bunching 
+                            all the buttons together, they&#8217;re placed relative to their function. 
+                            It makes sense with the schema.
+                        </p>
+
+                        <p>
+                            There are no close, minimize and expand window buttons. This software should 
+                            be visible at all times if it is in use. The window can be dragged around by 
+                            holding and dragging any area that is not a button.
+                        </p>
+
+                        <p>
+                            It&#8217;s hard to see the red filter I&#8217;ve added on everything in the 
+                            UI. It gives this intense cathode tube vibe. You can see it better in the sketch 
+                            file available to download on my GitHub. Check it out!
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="imageD" src="images/laser/desk.png" alt="Desk"></div>
+
+                    <div class="columnB"><img class="imageB" src="images/laser/desktop.png" alt="Desktop"></div>
+                </div>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+    </body>
+</html>

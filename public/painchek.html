@@ -1,0 +1,159 @@
+<!-- Table of Contents -----------------------------------------------------------------------------------------
+----1.Head
+----2.Body
+--------1.Navigation
+------------1.Pop Menus
+------------2.Static Menus
+------------3.Email
+--------2.Grid
+------------1.Logo
+------------2.Content
+--------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Srini Kumar - PainChek Logo</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/painchek.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- FIREBASE SDK & INITIALIZATION -------------------------------------------------------------------->
+            <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+            <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+            <script src="/__/firebase/init.js"></script>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- NAVIGATION --------------------------------------------------------------------------------------->
+            <div class="popMenus">
+                <button onclick="showProjectsMenu()" class="projectsButton">Projects</button>
+                <div id="projectsPopMenu" class="projectsContent">
+                    <a href="spin.html">Spin Coater Design</a>
+                    <a href="laser.html">Laser Software</a>
+                    <a href="microfluidic.html">Microfluidic Chips</a>
+                    <a href="messenger.html">Messenger UI</a>
+                    <a id="selected">PainChek Logo</a>
+                </div>
+
+                <button onclick="showInfoMenu()" class="infoButton">Info &#38; Links</button>
+                <div id="infoPopMenu" class="infoContent">
+                    <a href="index.html">About Me</a>
+                    <a href="mailto:hello@s-kumar.com" target="_blank">Email me: hello@s-kumar.com</a>  
+                    <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">Open My Github</a>
+                    <a href="https://dribbble.com/srinik" target="_blank">Open My Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">Open My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="projectsStaticMenu">
+                <h1 class="headings">Projects</h1>
+                <a href="spin.html">Spin Coater Design</a>
+                <a href="laser.html">Laser Software</a>
+                <a href="microfluidic.html">Microfluidic Chips</a>
+                <a href="messenger.html">Messenger UI</a>
+
+                <!-- SELECTION INDICATION ARROW -------------------------------------------------------------->
+                    <!-- This odd format must be used or else the arrow doesn't work properly. -->
+                    <a id="selected">PainChek Logo &nbsp;&nbsp;&nbsp;&nbsp;<em><strong>&#x25C0;</strong>&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</em></a>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+
+            <div class="infoStaticMenu">
+                <h1 class="headings">Info &#38; Links</h1>
+                
+                <a href="index.html">About Me</a>
+                <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">View My Github</a>
+                <a href="https://dribbble.com/srinik" target="_blank">View My Dribbble</a>
+                <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">View My LinkedIn</a>
+            </div>
+
+            <div class="email">
+                <object type="image/svg+xml" data="images/email.svg" ></object>
+                <a href="mailto:hello@s-kumar.com" target="_blank">hello@s-kumar.com</a>   
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- GRID --------------------------------------------------------------------------------------------->
+            <div class="gridBox">
+                <div class="logoBox">
+                    <object class="logo" type="image/svg+xml" data="images/Logo.svg" ></object>
+                </div>
+
+                <!-- CONTENT ---------------------------------------------------------------------------------->
+                <div class="contentBox">
+                    <div class="column"><img class="image" src="images/painchek/p1.png" alt="Booklet"></div>
+
+                    <div class="column">
+                        <h2>Background</h2>
+
+                        <p>
+                        A company named PainChek contracted me to design a logo for their 
+                        company and product. Their product is an app (also called PainChek) that scans a 
+                        patient&#8217;s face and accurately reports their pain levels. Patients aren&#8217;t 
+                        good at describing their pain, so it&#8217;s better to scan facial cues to determine 
+                        their pain levels yourself. PainChek aims this app at medical professionals and 
+                        caretakers.
+                        </p>
+                    </div>
+
+                    <div class="column"><img class="image" src="images/painchek/p2.png" alt="Logo"></div>
+
+                    <div class="column">
+                        <h2>Design</h2>
+
+                        <p>
+                            The logo looks like the letter P, but that&#8217;s not intentional. I experimented 
+                            with sketching a smartphone in front of a person&#8217;s face. Then to represent 
+                            data, scanning, and the flow of digital information, I sectioned the phone into a 
+                            flow of rectangles. I pushed up the abstraction until it became what we have now.
+                        </p>
+
+                        <p>
+                            I categorized PainChek as a medical utility company. Therefore, the logo needed 
+                            a grandfatherly presence while feeling slick and technological. It needed to 
+                            feel like a modern evolution of the IBM logo. I think I achieved that.
+                        </p>
+                    </div>
+
+                    <div class="column"><img class="image" src="images/painchek/p3.png" alt="Colors"></div>
+
+                    <div class="column">
+                        <p>
+                            I tried dressing the logo in colors that made sense. Blue felt authoritative, 
+                            green feels helpful, and the gray felt utilitarian. I immediately decided on a 
+                            mix of teal and bright green. It oozes possibility and experience.
+                        </p>
+                    </div>
+
+                    <div class="column"><img class="image" src="images/painchek/p4.png" alt="Sub-Branding"></div>
+
+                    <div class="column">
+                        <p>
+                            A cool thing about this logo is that it can incorporate sub-branding for other 
+                            products. PainChek was considering branching the product out at the time of designing this, 
+                            so they were happy that this is possible.
+                        </p>
+                    </div>
+
+                    <div class="column"><img class="image" src="images/painchek/p5.png" alt="Typeface"></div>
+
+                    <div class="column">
+                        <p>
+                            The founder of PainChek used to work at Roche, the makers of AccuChek. 
+                            If you&#8217;re a diabetic, you probably know of AccuChek. I thought it 
+                            would be neat to incorporate that history into the logo typeface. AccuChek&#8217;s 
+                            logo typeface has a hand-written vibe to it. So I used that idea to create a typeface 
+                            that kinda looked like a digital marker wrote it.
+                        </p>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+    </body>
+</html>

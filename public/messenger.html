@@ -1,0 +1,151 @@
+<!-- Table of Contents -----------------------------------------------------------------------------------------
+----1.Head
+----2.Body
+--------1.Navigation
+------------1.Pop Menus
+------------2.Static Menus
+------------3.Email
+--------2.Grid
+------------1.Logo
+------------2.Content
+--------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Srini Kumar - Messenger UI</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/messenger.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- FIREBASE SDK & INITIALIZATION -------------------------------------------------------------------->
+            <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+            <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+            <script src="/__/firebase/init.js"></script>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- NAVIGATION --------------------------------------------------------------------------------------->
+            <div class="popMenus">
+                <button onclick="showProjectsMenu()" class="projectsButton">Projects</button>
+                <div id="projectsPopMenu" class="projectsContent">
+                    <a href="spin.html">Spin Coater Design</a>
+                    <a href="laser.html">Laser Software</a>
+                    <a href="microfluidic.html">Microfluidic Chip</a>
+                    <a id="selected">Messenger UI</a>
+                    <a href="painchek.html">PainChek Logo</a> 
+                </div>
+
+                <button onclick="showInfoMenu()" class="infoButton">Info &#38; Links</button>
+                <div id="infoPopMenu" class="infoContent">
+                    <a href="index.html">About Me</a>
+                    <a href="mailto:hello@s-kumar.com" target="_blank">Email me: hello@s-kumar.com</a>  
+                    <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">Open My Github</a>
+                    <a href="https://dribbble.com/srinik" target="_blank">Open My Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">Open My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="projectsStaticMenu">
+                <h1 class="headings">Projects</h1>
+                <a href="spin.html">Spin Coater Design</a>
+                <a href="laser.html">Laser Software</a>
+                <a href="microfluidic.html">Microfluidic Chips</a>
+
+                <!-- SELECTION INDICATION ARROW -------------------------------------------------------------->
+                    <!-- This odd format must be used or else the arrow doesn't work properly. -->
+                    <a id="selected">Messenger &nbsp;&nbsp;&nbsp;&nbsp;<em><strong>&#x25C0;</strong>&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</em></a>
+                <!--------------------------------------------------------------------------------------------->
+                <a href="painchek.html">PainChek Logo</a> 
+            </div>
+
+            <div class="infoStaticMenu">
+                <h1 class="headings">Info &#38; Links</h1>
+                
+                <a href="index.html">About Me</a>
+                <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">View My Github</a>
+                <a href="https://dribbble.com/srinik" target="_blank">View My Dribbble</a>
+                <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">View My LinkedIn</a>
+            </div>
+
+            <div class="email">
+                <object type="image/svg+xml" data="images/email.svg" ></object>
+                <a href="mailto:hello@s-kumar.com" target="_blank">hello@s-kumar.com</a>   
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- GRID --------------------------------------------------------------------------------------------->
+            <div class="gridBox">
+                <div class="logoBox">
+                    <object class="logo" type="image/svg+xml" data="images/Logo.svg" ></object>
+                </div>
+
+                <!-- CONTENT ---------------------------------------------------------------------------------->
+                <div class="contentBox">
+                    <div class="columnA"><img class="image" src="images/messenger/screen1.png" alt="Mockup 1"></div>
+
+                    <div class="columnA">
+                        <h2>Background</h2>
+
+                        <p>
+                            I&#8217;ve designed for a pretty popular messaging app, but I&#8217;ve never 
+                            gotten to design an entire messenger UI myself. I scratched my itch by designing 
+                            a substantial amount.
+                            <br><br><br><br>
+                        </p>
+
+                        <h2 class="hSpecial">Design</h2>
+
+                        <p>
+                            Usually, messengers have a header bar at the top with a contact name and option 
+                            buttons. Why not just have that stuff at the bottom of the screen where your eyes 
+                            and thumbs hang out? We already know who we&#8217;re talking to anyway so the 
+                            name and picture don&#8217;t need all that spotlight.
+                        </p>
+
+                        <p>
+                            The arrow at the bottom shows that you can swipe up to expand your conversations 
+                            list (which would be the home-screen).
+                        </p>
+
+                        <p>
+                            Your brain is looking for social cues when talking to people. Like movements, 
+                            positions, and weight. You lose that in digital conversations, so I thought I 
+                            can add bits of that back with shadows. Ideally, almost every function and object 
+                            would have subtle animations to add some non-distracting life. Little things add up,
+                            so it matters to me.
+                        </p>
+                    </div>
+
+
+                    <div class="columnB"><img class="image" src="images/messenger/screen2.png" alt="Mockup 2"></div>
+
+                    <div class="columnA"><img class="image" src="images/messenger/screen3.png" alt="Mockup 3"></div>
+
+                    <div class="columnA">
+                        <p>
+                            The addition of stickers and apps to messengers has made them more cluttered. 
+                            Yet I&#8217;ve put them all under one button. You swipe one way to scroll through your most-used 
+                            sticker and the other way to scroll through your most recent images. You can tap the arrows next 
+                            to the labels to open a full-view gallery with categories. 
+                        </p>
+
+                        <p>
+                            I also had a few innovative ideas for a UI to communicate with commerce bots.
+                            But that&#8217;s a project for another day!
+                        </p>
+
+                        <p>
+                            Fun fact: the proper phrasing is <q>a UI</q> not <q>an UI</q>!
+                        </p>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+    </body>
+</html>

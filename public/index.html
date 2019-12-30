@@ -1,0 +1,114 @@
+<!-- Table of Contents -----------------------------------------------------------------------------------------
+----1.Head
+----2.Body
+--------1.Navigation
+------------1.Pop Menus
+------------2.Static Menus
+------------3.Email
+--------2.Grid
+------------1.Logo
+------------2.Content
+--------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Srini Kumar - About Me</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- FIREBASE SDK & INITIALIZATION -------------------------------------------------------------------->
+            <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+            <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+            <script src="/__/firebase/init.js"></script>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- NAVIGATION --------------------------------------------------------------------------------------->
+            <div class="popMenus">
+                <button onclick="showProjectsMenu()" class="projectsButton">Projects</button>
+                <div id="projectsPopMenu" class="projectsContent">
+                    <a href="spin.html">Spin Coater Design</a>
+                    <a href="laser.html">Laser Software</a>
+                    <a href="microfluidic.html">Microfluidic Chips</a>
+                    <a href="messenger.html">Messenger UI</a>
+                    <a href="painchek.html">PainChek Logo</a> 
+                </div>
+
+                <button onclick="showInfoMenu()" class="infoButton">Info &#38; Links</button>
+                <div id="infoPopMenu" class="infoContent">
+                    <a id="selected">About Me</a>
+                    <a href="mailto:hello@s-kumar.com" target="_blank">Email me: hello@s-kumar.com</a>  
+                    <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">Open My Github</a>
+                    <a href="https://dribbble.com/srinik" target="_blank">Open My Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">Open My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="projectsStaticMenu">
+                <h1 class="headings">Projects</h1>
+
+                <a href="spin.html">Spin Coater Design</a>
+                <a href="laser.html">Laser Software</a>
+                <a href="microfluidic.html">Microfluidic Chips</a>
+                <a href="messenger.html">Messenger UI</a>
+                <a href="painchek.html">PainChek Logo</a> 
+            </div>
+
+            <div class="infoStaticMenu">
+                <h1 class="headings">Info &#38; Links</h1>
+                
+                <!-- SELECTION INDICATION ARROW -------------------------------------------------------------->
+                    <!-- This odd format must be used or else the arrow doesn't work properly. -->
+                    <a id="selected"><em>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<strong>&#x25B6;</strong></em>&nbsp;&nbsp;&nbsp;&nbsp; About Me</a>
+                <!--------------------------------------------------------------------------------------------->
+                <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">View My Github</a>
+                <a href="https://dribbble.com/srinik" target="_blank">View My Dribbble</a>
+                <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">View My LinkedIn</a>
+            </div>
+
+            <div class="email">
+                <object type="image/svg+xml" data="images/email.svg" ></object>
+                <a href="mailto:hello@s-kumar.com" target="_blank">hello@s-kumar.com</a>   
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- GRID --------------------------------------------------------------------------------------------->
+            <div class="gridBox">
+                <div class="logoBox">
+                    <object class="logo" type="image/svg+xml" data="images/Logo.svg" ></object>
+                </div>
+
+                <!-- CONTENT ---------------------------------------------------------------------------------->
+                <div class="contentBox">
+                    <div class="column">
+                        <p> Hello,</p>
+
+                        <p>
+                            My name is Srinivasan Kumaresan, but Srini Kumar sounds more user-friendly right? 
+                            I research, design and engineer multi-layered cost-efficient microfluidic chips at 
+                            California State University San Bernardino. I&#8217;ve also worked for dozens of 
+                            companies as a contract designer.
+                        </p>
+
+                        <p>
+                            I designed and developed this site to give you a slice of my career. This site is 
+                            more of a journal than a portfolio, so not all my work is here. I&#8217;ve only 
+                            showcased my favorite projects.
+                        </p>
+
+                        <p>I hope you find inspiration through my work. Thank you!</p>
+                    </div>
+
+                    <div class="column"> <img class="image" src="images/index/me.png" alt="Me"> </div>
+                </div>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+    </body>
+</html>

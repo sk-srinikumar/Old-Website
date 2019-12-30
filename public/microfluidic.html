@@ -1,0 +1,330 @@
+<!-- Table of Contents -----------------------------------------------------------------------------------------
+----1.Head
+----2.Body
+--------1.Navigation
+------------1.Pop Menus
+------------2.Static Menus
+------------3.Email
+--------2.Grid
+------------1.Logo
+------------2.Content
+--------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Srini Kumar - Microfluidic Chips</title>
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/microfluidic.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- FIREBASE SDK & INITIALIZATION -------------------------------------------------------------------->
+            <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+            <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+            <script src="/__/firebase/init.js"></script>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- NAVIGATION --------------------------------------------------------------------------------------->
+            <div class="popMenus">
+                <button onclick="showProjectsMenu()" class="projectsButton">Projects</button>
+                <div id="projectsPopMenu" class="projectsContent">
+                    <a href="spin.html">Spin Coater Design</a>
+                    <a href="laser.html">Laser Software</a>
+                    <a id="selected">Microfluidic Chips</a>
+                    <a href="messenger.html">Messenger UI</a>
+                    <a href="painchek.html">PainChek Logo</a> 
+                </div>
+
+                <button onclick="showInfoMenu()" class="infoButton">Info &#38; Links</button>
+                <div id="infoPopMenu" class="infoContent">
+                    <a href="index.html">About Me</a>
+                    <a href="mailto:hello@s-kumar.com" target="_blank">Email me: hello@s-kumar.com</a>  
+                    <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">Open My Github</a>
+                    <a href="https://dribbble.com/srinik" target="_blank">Open My Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">Open My LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="projectsStaticMenu">
+                <h1 class="headings">Projects</h1>
+                <a href="spin.html">Spin Coater Design</a>
+                <a href="laser.html">Laser Software</a>
+                <!-- SELECTION INDICATION ARROW -------------------------------------------------------------->
+                    <!-- This odd format must be used or else the arrow doesn't work properly. -->
+                    <a id="selected">Microfluidic Chips &nbsp;&nbsp;&nbsp;&nbsp;<em><strong>&#x25C0;</strong>&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</em></a>
+                <!--------------------------------------------------------------------------------------------->
+                <a href="messenger.html">Messenger UI</a>
+                <a href="painchek.html">PainChek Logo</a> 
+            </div>
+
+            <div class="infoStaticMenu">
+                <h1 class="headings">Info &#38; Links</h1>
+                
+                <a href="index.html">About Me</a>
+                <a href="https://github.com/sk-srinikumar?tab=repositoriesl" target="_blank">View My Github</a>
+                <a href="https://dribbble.com/srinik" target="_blank">View My Dribbble</a>
+                <a href="https://www.linkedin.com/in/sk-kumar" target="_blank">View My LinkedIn</a>
+            </div>
+
+            <div class="email">
+                <object type="image/svg+xml" data="images/email.svg" ></object>
+                <a href="mailto:hello@s-kumar.com" target="_blank">hello@s-kumar.com</a>   
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <!-- GRID --------------------------------------------------------------------------------------------->
+            <div class="gridBox">
+                <div class="logoBox">
+                    <object class="logo" type="image/svg+xml" data="images/Logo.svg" ></object>
+                </div>
+
+                <!-- CONTENT ---------------------------------------------------------------------------------->
+                <div class="contentBox">
+                    <div class="columnA">
+                        <h2>Background</h2>
+                        <p>
+                            I&#8217;m researching a cost-efficient (super cheap) multi-layered microfluidic 
+                            chip production process. A paper from the University of Minho (Portugal) inspired me. 
+                            They figured out the cheapest process in the world to produce single-layered chips. 
+                            Based on their research, I&#8217;m figuring out an even cheaper process to produce 
+                            multi-layered chips. Multi-layered chips have microscopic machinery in them while 
+                            single-layered chips do not. Engineering and building microscopic machines is tricky.
+                        </p>
+
+                        <p>
+                            My research is ongoing, but it is close to completion. Once completed, I will write 
+                            a paper and share it on this site. But for now, enjoy all the pictures I took while 
+                            conducting this research project!
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/ogchip1.png" alt="Original Chip"></div>
+
+                    <div class="columnB">
+                        <p>
+                            This is a multi-layered microfluidic chip modeled by Stanford University. 
+                            We buy these chips from a third-party manufacturer. Not only are these chips 
+                            expensive, many of them arrive with defects. Add that with the fact we can only 
+                            use them about a dozen times each, and you got a huge money sink.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/ogchip2.png" alt="Original Chip 2"></div>
+
+                    <div class="columnB">
+                        <p>
+                            To save money, I proposed we manufacture our own chips. Usually you need an expensive 
+                            facility with expensive machinery solely for chip production. But I figured out a 
+                            feasible manufacturing process.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/ogdesign.png" alt="Original Chip Design"></div>
+
+                    <div class="columnB">
+                        <p>
+                            This is the CAD file of the Stanford chip. My colleagues use these chips to 
+                            experiment with microbes. It works well, but it&#8217;s not designed for that.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/mydesign.png" alt="My Chip Design"></div>
+
+                    <div class="columnB">
+                        <p>I designed a new chip schema. This one is easier to use and lasts longer.</p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/printer.png" alt="Printer"></div>
+
+                    <div class="columnB">
+                        <p>
+                            To create the chip, we make a mold. To make the mold, we ordered a high resolution (
+                            2400 DPI) printer. We&#8217;re thinking about ordering one with an even higher resolution.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/testink.png" alt="Test Stencil"></div>
+
+                    <div class="columnB">
+                        <p>
+                            AutoCAD sucks at handling transparent microscopic designs like this. But I figured out a way 
+                            to barely make it work. The print job pictured here is not small enough, but it got close.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/badink.png" alt="Bad Stencil"></div>
+
+                    <div class="columnB">
+                        <p>                        
+                            I printed the schema onto porous transparent paper. But only one side is porous. 
+                            This was the wrong side!
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/goodink.png" alt="Good Stencil"></div>
+
+                    <div class="columnB">
+                        <p>And this was the right side!</p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/stencilpetri.png" alt="Finished Stencil"></div>
+
+                    <div class="columnB">
+                        <p>                        
+                            That paper with the schema gets made into a stencil. The schema is the right size here. 
+                            This stencil will transfer the schema onto a mold.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/glass cutting.png" alt="Glass Cutting"></div>
+
+                    <div class="columnB">
+                        <p>                                                
+                            I use special glass slides as a base for the mold. Glass cutting is surprisingly 
+                            easy and fun with the right tools!
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/labeling.png" alt="Glass Labeling"></div>
+
+                    <div class="columnB">
+                        <p>I&#8217;m preparing the subjects of my experiment by labeling them.</p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/epoxy.png" alt="Epoxy"></div>
+
+                    <div class="columnB">
+                        <p>                                                                        
+                            This is an SU-8 25 epoxy produced by Microchem. IBM invented and used it to make 
+                            computer microchips. This epoxy will form the microscopic details of the mold.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/drop.png" alt="Drop of Epoxy"></div>
+
+                    <div class="columnB">
+                        <p>This what a drop of that epoxy looks like on a petri dish.</p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/perfectspin.png" alt="Spun Epoxy"></div>
+
+                    <div class="columnB">
+                        <p>That drop is spun flat. </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/drop2.png" alt="Drop on Spin Coater"></div>
+
+                    <div class="columnB">
+                        <p>Here&#8217;s the drop on the machine that will spin it.</p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/spintest.png" alt="Spin Coater Testing"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            Here I am testing if the spin coater machine is properly balanced. Turns out it 
+                            wasn&#8217;t. I later built a gyroscopic contraption on top of the machine to fix 
+                            the balance. It worked beautifully!
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/room.png" alt="Lab"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            I can't expose the epoxy to light because it will start cross-linking. 
+                            Basically, it becomes a crystal like a diamond or salt if it bathes in light too 
+                            long. So I have to work in the dark.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/hotplates.png" alt="Hot Plates"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            I spun the epoxy flat on glass. Then the epoxy on glass in soft-baked on a hot-plate. 
+                            I found out ceramic hot-plates don&#8217;t distribute heat evenly from the center. 
+                            So don&#8217;t make the mistake I&#8217;m making in this picture!
+                        </p>
+
+                        <p>
+                            We soft-bake instead of hard-baking (baking in an oven) because we utilize airflow. 
+                            Fast airflow on a surface removes air-pressure, which lets things lift off easier. 
+                            That&#8217;s why airplanes fly! Here, we want the water from the epoxy to evaporate faster.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/exposure.png" alt="UV Exposure"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            I'm exposing the epoxy to UV light. The stencil limits which parts of the epoxy get 
+                            UV exposure. The UV crystallizes all the epoxy it touches.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/fumehood.png" alt="Fumehood"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            This area is the fume hood. It has a glass door, a chimney and other safety precautions. 
+                            I&#8217;m working with smelly and dangerous chemicals, so I have to do most of my 
+                            work in this tiny spot.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/stressed.png" alt="Cracked Mold"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            The epoxy here cracked badly. How you handle the epoxy depends on the lab&#8217;s 
+                            temperature, humidity and equipment. I found out we can&#8217;t rely on manufacturer 
+                            instructions because our lab conditions are wonky.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/mold.png" alt="Mold"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            Here&#8217;s a completed mold. But why doesn&#8217;t it look clean? What&#8217;s deforming 
+                            it? Eventually I figured it out... 
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/failure.png" alt="Mold Batch"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                
+                            I just finished conducting an experiment to isolate the problem. The entire batch of 
+                            molds came out super deformed. Turns out the UV exposure machine is too old to do its job right.
+                        </p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/orbital.gif" alt="Orbital Spinner"></div>
+
+                    <div class="columnB">
+                        <p>I'm bathing the mold in an organic solvent to remove the non-crystallized epoxy.</p>
+                    </div>
+
+                    <div class="columnB"><img class="image" src="images/microfluidic/plasma.gif" alt="Plasma"></div>
+
+                    <div class="columnB">
+                        <p>                                                                                                                       
+                            This oxygen plasma machine is used on the chip itself, not the mold. The electricity
+                            pulls the electrons of the chip to the surface. Since the electrons are on the surface, 
+                            the chips bonds to things without using glue. This is how we combine multiple layers 
+                            to make a multi-layered chip. Glass is put under this machine to enable bonding too.
+                        </p>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------------------------------->
+            </div>
+        <!----------------------------------------------------------------------------------------------------->
+    </body>
+</html>
